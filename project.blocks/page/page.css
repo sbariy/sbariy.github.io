@@ -1,19 +1,8 @@
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('fonts/Proxima-Nova-Alt-Regular-webfont.eot');
-    src: url('fonts/Proxima-Nova-Alt-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Proxima-Nova-Alt-Regular-webfont.woff') format('woff'),
-         url('fonts/Proxima-Nova-Alt-Regular-webfont.ttf') format('truetype'),
-         url('fonts/Proxima-Nova-Alt-Regular-webfont.svg#proxima_nova_altregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .page {
 	height: 100%;
 	width: 100%;
 	background: url("images/pattern.jpg") repeat;
-	font-family: 'Proxima Nova', Arial, Georgia;
+	font-family: 'Verdana', Arial, Georgia;
 	width: 100%;
 	min-height: 100%;
 }
