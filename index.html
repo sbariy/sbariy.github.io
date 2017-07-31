@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Black Vertical Menu</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="scripts.js"></script>
+
+</head>
+
+<body class="body">
+
+	<div class="page">
+		<h1 class="page__title headline headline_type_h1">Vertical menu</h1>
+		
+		<!-- Main menu -->
+		<nav class="page__vertical-menu">
+			<ul class="vertical-menu">
+				<li class="vertical-menu__item">
+					<a href="#" class="link link_type_block">
+						<div class="vertical-menu__content">
+							<div class="vertical-menu-item">
+								<i class="vertical-menu-item__icon fa fa-user"></i> Profile 
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="vertical-menu__item">
+					<a href="#" class="link link_type_block link_target_accordion">
+						<div class="vertical-menu__content">
+							<div class="vertical-menu-item">
+								<i class="vertical-menu-item__icon fa fa-envelope"></i> Messages
+								<span class="vertical-menu-item__counter">32</span>
+							</div>
+						</div>
+					</a>
+
+					<!-- Sub menu -->
+					<div> <!-- Wrapper for Accordion JQuery UI -->
+						<ul class="vertical-menu__sub-menu vertical-sub-menu">
+							<li class="vertical-sub-menu__item">
+								<a href="#" class="link link_type_block">
+									<div class="vertical-sub-menu__content">
+										<div class="vertical-menu-item vertical-menu-item_size_s">
+											<i class="vertical-menu-item__icon vertical-menu-item__icon_size_s fa fa-caret-right"></i> Inbox 
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="vertical-sub-menu__item">
+								<a href="#" class="link link_type_block">
+									<div class="vertical-sub-menu__content">
+										<div class="vertical-menu-item vertical-menu-item_size_s">
+											<i class="vertical-menu-item__icon vertical-menu-item__icon_size_s fa fa-caret-right"></i> Sent 
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="vertical-sub-menu__item">
+								<a href="#" class="link link_type_block">
+									<div class="vertical-sub-menu__content">
+										<div class="vertical-menu-item vertical-menu-item_size_s">
+											<i class="vertical-menu-item__icon vertical-menu-item__icon_size_s fa fa-caret-right"></i> Drafts 
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</li>
+				<li class="vertical-menu__item">
+					<a href="#" class="link link_type_block">
+						<div class="vertical-menu__content">
+							<div class="vertical-menu-item">
+								<i class="vertical-menu-item__icon fa fa-gear"></i> Settings
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="vertical-menu__item">
+					<a href="#" class="link link_type_block">
+						<div class="vertical-menu__content">
+							<div class="vertical-menu-item">
+								<i class="vertical-menu-item__icon fa fa-power-off"></i> Log out
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+</body>
+</html>

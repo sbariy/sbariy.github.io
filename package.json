@@ -1,0 +1,21 @@
+{
+  "name": "vertical-menu",
+  "version": "0.0.1",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ABariy",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "html2bl": "github:dab/html2bl"
+  }
+}

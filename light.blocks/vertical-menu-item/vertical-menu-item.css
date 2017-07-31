@@ -1,0 +1,15 @@
+.vertical-menu-item {
+	color: #4b4d53;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+}
+
+.vertical-menu-item_size_s {
+	color: #784529;
+	font-size: 0.813em;
+}
+
+.vertical-menu-item__counter {
+	background-color: #e9e9e9;
+	border-top: 1px solid rgba(255, 255, 255, 0.8);
+	color: #784529;
+}

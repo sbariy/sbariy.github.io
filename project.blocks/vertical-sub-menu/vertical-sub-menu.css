@@ -1,0 +1,19 @@
+.vertical-sub-menu {
+	box-shadow: inset 0 0 5px 1px rgba(0,0,0, 0.25);
+	background: url("images/bg_sub-menu.jpg") repeat;
+	list-style: none;
+	border-top: 1px solid #1e2127;
+}
+
+.vertical-menu__sub-menu {
+	padding: 5px 0;
+	overflow: hidden;
+}
+
+.vertical-sub-menu__item:last-child {
+	padding-bottom: 0;
+}
+
+.vertical-sub-menu__content {
+	padding: 0.3125em 0.625em;
+}

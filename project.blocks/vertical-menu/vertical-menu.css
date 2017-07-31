@@ -1,0 +1,30 @@
+.vertical-menu {
+	border-radius: 5px;
+	border: 1px solid #1e2127e6;
+	overflow: hidden;
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15), 0 0 20px 1px black;
+	padding: 0;
+	font-size: 1rem;
+}
+
+.vertical-menu__item {
+	list-style: none;
+	margin: 0;
+	border-top: 1px solid #4a4e5a;
+	border-bottom: 1px solid #1e2127;
+	background-color: #383d49;
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
+}
+
+.vertical-menu__content:hover {
+	background-color: #434d56;
+	transition: background-color 0.2s;
+}
+
+.vertical-menu__item:last-child {
+	border-bottom: none;
+}
+
+.vertical-menu__content {
+	padding: 0.625em;
+}
