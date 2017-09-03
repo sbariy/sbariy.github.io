@@ -1,0 +1,786 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "sprite"
+@import "makesvgsprite"
+@import "icons"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+a:hover
+	transition: color 0.3s
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	font-size: 16px
+	margin: 0
+	padding: 0
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: $default-font
+	font-weight: 300;
+	overflow-x: hidden
+	opacity: 1
+
+section
+	position: relative
+	background-size: cover
+
+/* Clearfix */
+.clearfix::after
+    content: ""
+    display: table
+    clear: both
+
+/* block Link */	
+.link
+	text-decoration: none !important
+
+	&_type_block
+		display: block
+
+	&_hover_white:hover, &_hover_white:active
+		color: white
+	&_hover_gray:hover, &_hover_gray:active
+		color: #e6e6e6
+
+/* block Headline */
+.headline
+	position: relative
+	font-size: 1.25rem
+	margin-top: 1em
+	margin-bottom: 0.5em
+	line-height: 1.2
+	text-transform: uppercase
+
+	&_type_h1
+		font-size: 2.625rem
+	&_type_h2
+		font-size: 1.5rem
+		font-weight: bold
+	&_type_h3
+		font-size: 1.4rem
+		font-weight: bold
+	&_color_white
+		color: white
+	&_color_black
+		color: $black
+	&_arrow_right::after
+		@include sprite($right-arrow)
+		content: ''
+		position: absolute
+		right: -70px
+		top: 25px
+	&_arrow_left::after
+		@include sprite($left-arrow)
+		content: ''
+		position: absolute
+		left: -70px
+		top: 25px
+
+/* block Paragraph */
+.paragraph
+	&_size_b
+		font-size: 1rem
+		line-height: 1.875
+	&_size_s
+		font-size: .875rem
+		line-height: 1.75
+		margin: 10px 0
+	&_color_white
+		color: white
+
+/* block Button */
+.button
+	border-radius: 2px
+	text-align: center
+	vertical-align: middle
+	box-shadow: 2px 2px 5px rgba(0,0,0, .25)
+	white-space: nowrap
+	text-transform: uppercase
+
+	&__icon
+		padding-left: 8px	
+		font-size: 1.125em
+		color: $lightestGray
+
+	&_fz_l
+		font-size: 1.25rem
+	&_fz_m
+		font-size: 1rem
+	&_fz_s
+		font-size: 0.97rem
+	&_fz_xs
+		font-size: 0.75rem
+		font-weight: bold
+
+	&_family_opensans
+		font-family: OpenSans-font
+
+	&_color_gray
+		color: $lightestGray
+		background-color: $gray
+	&_color_yellow
+		color: $gray
+		background-color: $accent
+	&_color_white
+		background-color: white
+		color: $gray
+
+	&_color_light-gray
+		background-color: #a5a5a5
+		color: white
+	&_color_red
+		background-color: $red
+		color: white
+
+	&_size_xs
+		max-width: 150px
+		height: 50px
+		line-height: 50px
+	&_size_s
+		max-width: 190px
+		height: 45px
+		line-height: 45px
+	&_size_m
+		max-width: 215px
+		height: 55px
+		line-height: 55px
+	&_size_l
+		max-width: 330px
+		height: 55px
+		line-height: 55px
+	&_size_xl
+		max-width: 445px
+		height: 55px
+		line-height: 55px
+	
+/* block Container */
+.container
+	max-width: 1035px
+	padding: 0 20px
+
+	&_size_narrow
+		max-width: 975px
+
+/* section Top-section */
+.top-section
+	background-color: $accent
+
+	&__header
+		margin-bottom: 55px
+		position: relative
+
+	&__composition
+		position: relative
+		&:before
+			content: ''
+			@include sprite($top-arrow)
+			width: 393px
+			height: 50px
+			position: absolute
+			left: 290px
+			top: -5px
+	
+	&__headline
+		margin: 0
+	
+	&__headline_nowrap
+		white-space: nowrap
+
+	&__text
+		margin-top: 1.75em
+		margin-bottom: 1.6em
+
+	&__button
+		text-transform: none
+
+	&__hamburger 
+		padding: 0
+		position: absolute
+		left: 15px
+		height: 24px
+		top: 0
+		bottom: 0
+		margin: auto 0
+		.hamburger-box
+			width: 30px
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+			width: 30px
+			height: 3px
+/* block Page */
+.page
+	&__top
+		padding: 75px 0 55px
+	&__services
+		padding: 140px 0 125px
+	&__features
+		padding: 130px 0 50px
+	&__packages
+		padding: 100px 0 275px
+	&__history
+		padding: 65px 0
+	&__updates-support
+		padding: 130px 0 135px
+
+	
+/* block Main-menu */
+.main-menu
+	&__wrapper 
+		padding: 0
+		margin: 0
+		text-align: right
+	&__item 
+		display: inline-block
+		margin: 0 1rem 0 0
+		padding: 0
+		list-style: none;
+		text-align: center
+	
+	&__item_relative
+		position: relative
+
+	&__item:last-child
+		margin: 0
+
+	&__link
+		padding: 3px 7px
+		font-weight: bold
+		color: $gray
+		text-transform: uppercase
+		font-size: 0.875rem;
+
+	&__link:hover
+		text-decoration: none
+
+	&__link:focus
+		color: $gray
+
+	&__link_state_active
+		color: white
+
+	&__phone
+		display: block
+		position: absolute
+		top: 22px
+		left: 0
+		right: 0
+		font-size: 12px
+		font-weight: 800	
+
+#mm-main-menu
+	.mm-navbar
+		height: auto
+	.mm-listview
+		margin-top: 0
+	.mm-title
+		padding-top: 15px
+		img 
+			height: 30px
+	.main-menu__phone
+		display: none
+
+/* block Slider */
+.owl-item img
+	height: 100%
+
+.slider.owl-theme .owl-dots .owl-dot.active span, .slider.owl-theme .owl-dots .owl-dot:hover span
+	background-color: white
+	transition: background-color 0.3s
+
+.slider.owl-theme .owl-dots .owl-dot span
+	background-color: $gray
+	margin: 5px 2px
+
+.slider .owl-item
+	display: inline-block
+	float: none
+	vertical-align: bottom
+
+/* section SERVICES */
+.services__title
+	margin: 0 auto 180px
+
+
+.services__content
+
+.services__item 
+	margin-bottom: 200px
+	
+	&:last-child
+		margin-bottom: 0;
+
+/* block Service */
+.service__img
+	margin: 0 auto
+
+
+.service__headline
+	font-weight: bold
+	font-size: 1.125rem
+
+/* section WORK */
+.work
+	background: url('../img/line-pattern.jpg') repeat;
+
+	&__title
+		margin: 85px auto 145px
+
+/* section FEATURES */
+.features
+	&__title__content
+		text-align: center
+
+	&__title
+		margin: 0 auto 130px
+
+	&__item
+		margin-bottom: 50px;
+
+	&__content
+		margin-bottom: -50px
+
+.feature
+	position: relative
+	padding: 15px 15px 15px 50px
+	text-align: left
+
+	&__icon:before
+		content: '';
+		position: absolute
+		display: block
+		top: 15px
+		left: 10px
+	&:hover
+		background-color: $accent
+		transition: background-color 0.7s ease
+
+	&_icon_paper
+		&::before
+			@include spritesvg(paper);
+		&:hover
+			&::before
+				@include spritesvg(paper-white);
+	&_icon_television
+		&::before
+			@include spritesvg(television);
+		&:hover
+			&::before
+				@include spritesvg(television-white);
+	&_icon_laptop
+		&::before
+			@include spritesvg(laptop);
+		&:hover
+			&::before
+				@include spritesvg(laptop-white);
+	&_icon_bag
+		&::before
+			@include spritesvg(bag);
+		&:hover
+			&::before
+				@include spritesvg(bag-white);
+	&_icon_cropping
+		&::before
+			@include spritesvg(cropping);
+		&:hover
+			&::before
+				@include spritesvg(cropping-white);
+	&_icon_diamond
+		&::before
+			@include spritesvg(diamond);
+		&:hover
+			&::before
+				@include spritesvg(diamond-white);
+	&_icon_dish
+		&::before
+			@include spritesvg(dish);
+		&:hover
+			&::before
+				@include spritesvg(dish-white);
+	&_icon_edit
+		&::before
+			@include spritesvg(edit);
+		&:hover
+			&::before
+				@include spritesvg(edit-white);
+	&_icon_globe
+		&::before
+			@include spritesvg(globe);
+		&:hover
+			&::before
+				@include spritesvg(globe-white);
+	&_icon_paper-cup
+		&::before
+			@include spritesvg(paper-cup);
+		&:hover
+			&::before
+				@include spritesvg(paper-cup-white);
+	&_icon_selection
+		&::before
+			@include spritesvg(selection);
+		&:hover
+			&::before
+				@include spritesvg(selection-white);
+	&_icon_wallet
+		&::before
+			@include spritesvg(wallet);
+		&:hover
+			&::before
+				@include spritesvg(wallet-white);
+
+	&__title
+		display: block 
+		font-size: 1.125rem
+		font-weight: 400
+		margin-bottom: 10px
+		line-height: 1em
+
+	&__text 
+		font-size: 0.875rem
+		line-height: 1.6em
+
+/* section PACKAGES */
+.packages
+	&__title
+		margin: 0 auto 200px
+
+	&__content
+		max-width: 835px
+		margin: 0 auto
+
+	&__table
+		width: 100%
+		color: #b3b3b3
+		font-weight: 600
+		text-align: center
+
+.package
+	&__row:first-child
+		height: 90px
+		vertical-align: bottom
+	&__cell
+		border-bottom: 1px solid $accent
+		border-left: 1px solid $accent
+		padding: 0.625rem 0.3125rem
+		width: 31%
+		position: relative
+
+		&_loc_center
+			font-size: 1.125rem
+			font-weight: bold
+			color: $gray
+			width: 38%
+
+	&__footer &__cell
+		border-bottom: none
+
+	&__footer
+		& package__row
+		height: 90px
+
+	&__row &__cell:first-child
+		border-left: none
+
+	&__title
+		display: block
+		font-weight: normal
+		position: absolute
+		left: 0
+		right: 0
+		top: -0.6rem
+
+		&_color_gray
+			color: #8d8d8d
+		&_color_red
+			color: $red
+		&_color_orange
+			color: $accent
+
+		&_size_s
+			font-size: 1.375rem
+		&_size_l
+			font-size: 1.6875rem
+
+		&_loc_top
+			top: -1.7rem
+
+	&__price
+		position: relative
+		top: 1.8rem
+		padding-top: 2px
+		font-weight: 600
+		display: block
+		&_color_gray
+			color: #a5a5a5
+		&_color_red
+			color: $red
+		&_color_orange
+			color: $accent
+
+		&_size_s
+			font-size: 2.1875rem
+		&_size_l
+			font-size: 4.25rem
+			line-height: 1
+
+		&-sub_size_s
+			font-size: 1.25rem
+		&-sub_size_l
+			font-size: 1.5625rem
+
+	&__button
+		margin: 0 auto
+		font-weight: bold
+		color: white
+		position: absolute
+		width: 100%
+		left: 0
+		right: 0
+		top: 9.0625rem
+		box-shadow: 1px 2px 0 0 #e6e6e6
+
+		&_weight_norm
+			font-weight: normal
+		
+
+/* section HISTORY */
+.history
+	background: url('../img/line-pattern.jpg') repeat
+	&__title
+		letter-spacing: 3px
+		margin: 0
+	&__text
+		font-size: 1rem
+		line-height 1.8
+	&__img
+		margin: 0 auto
+
+/* section PROJECTS */
+.projects
+	&__title
+		margin: 145px auto 130px
+	&__content
+		background-color: #f4f4f4
+		padding: 85px 60px
+		text-align: center
+		&::after
+			display: block
+			content: ''
+			height: 100%
+			margin-bottom: -30px
+	&__item
+		margin-bottom: 30px
+
+
+	
+.project
+	text-align: center
+
+	&__icon
+		&_technical
+			@include spritesvg(technical)
+		&_secure
+			@include spritesvg(secure)
+		&_market
+			@include spritesvg(market)
+		&_credit
+			@include spritesvg(credit)
+		&_targetting
+			@include spritesvg(targetting)
+		&_insurance
+			@include spritesvg(insurance)
+		&_ecomerce
+			@include spritesvg(ecomerce)
+		&_office
+			@include spritesvg(office)
+
+	&__name
+		display: block
+		text-transform: uppercase
+		margin-top: 1.25rem
+		font-size: 1rem
+		color: #6a6a6a
+		font-weight: bold
+
+/* section MEMBERS */
+.members
+	&__title
+		margin: 115px auto 140px
+	&__content
+		text-align: center
+		padding: 60px 0 20px
+		background-color: $accent
+
+.member
+	color: #f5f5f5
+	font-size: 1rem
+	text-transform: uppercase
+	&__avatar
+		background-color: #ebebeb
+		border-radius: 50%
+		overflow: hidden
+		width: 7.8125rem
+		height: 7.8125rem
+		position: relative
+		margin: 0 auto 15px
+
+	&__img
+		height: 100%
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		margin: 0 auto
+	&__name
+		font-weight: bold
+		margin-bottom: 0.9375rem
+	&__qualification
+		line-height: 1rem
+
+
+/* section UPDATES-SUPPORT */
+.updates-support
+	&__title
+		margin: 0 auto 150px
+	&__support
+		margin-bottom: 135px
+	&__creative
+		background-color: $accent
+
+.support
+	&__text
+		margin-top: 0
+		line-height: 1.7
+	&__img
+		margin: 0 auto
+		padding-bottom: 15px
+
+.creative
+	&__screen
+		background-color: rgba($accent, 0.5)
+		height: 100%
+		width: 100%
+	&__img
+		height: 415px
+	&__text
+		position: relative
+		max-height: 90px
+		padding: 20px 25px 20px 50px
+		& .grid .grid__item:last-child
+			text-align: right
+	&__title
+		font-family: OpenSans-font
+
+	&__button
+		height: 45px
+		max-width: 160px
+		line-height: 45px
+		padding: 10px 40px
+		font-weight: bold
+		font-family: OpenSans-font
+		font-size: 1.25rem
+
+/* section FOOTER */
+.footer
+	background-color: $darkestGray
+	&__links
+		padding: 40px 0
+	&__social
+		text-align: center
+	&__copyright
+		margin: 25px 0 40px
+		text-align: center
+	&__item
+		margin-bottom: 30px
+	&__blocks
+		&::after
+			display: block
+			content: ''
+			height: 100%
+			margin-bottom: -30px
+
+.nav-block
+	&__list, &__item
+		padding: 0
+		margin: 0
+	&__title
+		font-size: 1.125rem
+		color: #e6e9ed
+		padding-bottom: 1.6em
+		display: block
+		font-weight: 600
+		text-transform: uppercase
+	&__item
+		padding-bottom: 0.625rem
+		list-style-type: none
+	&__link
+		font-size: 1rem
+		color: $blueGray
+
+.social
+	&__item, &
+		padding: 0
+		margin: 0
+	&__item
+		list-style-type: none
+		display: inline-block
+		margin-right: 5px
+		&:last-child
+			margin-right: 0
+	&__link
+		font-size: 15px
+		line-height: 40px
+		height: 40px
+		width: 40px
+		background-color: $accent
+		text-align: center
+		color: white
+		border-radius: 2px
+
+.copyright
+	display: block
+	font-size: 1rem
+	color: $blueGray
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+@import "media" // Всегда в конце

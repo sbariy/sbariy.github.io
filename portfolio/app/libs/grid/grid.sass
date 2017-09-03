@@ -1,0 +1,100 @@
+@import "_mixins/equal-columns"
+@import "_mixins/different-columns"
+@import "_mixins/hidden"
+@import "_mixins/visible"
+
+$columns: 12
+$gutter: 20px
+$verticalAlign: top
+
+.container
+	max-width: 1000px
+	width: 100%
+	padding: 0 15px
+	margin: 0 auto
+
+	&::before, &::after
+		content: ''
+		display: table
+
+.grid
+	margin-left: -$gutter / 2
+	margin-right: -$gutter / 2
+	&::before
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: $verticalAlign
+
+	&_valign_bottom
+		&::before, > [class*="__item"], > [class*="grid__col_"]
+			vertical-align: bottom !important
+
+	&_valign_middle
+		&::before, > [class*="__item"], > [class*="grid__col_"]
+			vertical-align: middle !important
+
+	&_valign_top
+		&::before, > [class*="__item"], > [class*="grid__col_"]
+			vertical-align: top !important
+
+	&_valign_baseline
+		&::before, > [class*="__item"], > [class*="grid__col_"]
+			vertical-align: baseline !important
+
+
+[class*="grid_"] > [class*="__item"], [class*="grid__col_"]
+		box-sizing: border-box
+		display: inline-block
+		width: calc(100% - #{$gutter})
+		margin-left: $gutter / 2
+		margin-right: $gutter / 2
+		vertical-align: $verticalAlign
+
+		/* hack for ie 6, 7 */
+		*zoom: 1
+    	*display: inline
+
+.hidden
+	display: none !important
+.visible
+	display: block !important
+
+
+/* Helpers */
+@media (max-width: 767px)
+	@include hidden(xs)
+	@include visible(xs)
+@media (max-width: 991px)
+	@include hidden(sm)
+	@include visible(sm)
+@media (max-width: 1199px)
+	@include hidden(md)
+	@include visible(md)
+@media (min-width: 1200px)
+	@include hidden(lg)
+	@include visible(lg)
+
+/* Extra-small Devices, Tablets */
+@include equal-columns(xs, $gutter, $columns)
+@include different-columns(xs, $gutter, $columns)
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	@include equal-columns(sm, $gutter, $columns)
+	@include different-columns(sm, $gutter, $columns)
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	@include equal-columns(md, $gutter, $columns)
+	@include different-columns(md, $gutter, $columns)
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	@include equal-columns(lg, $gutter, $columns)
+	@include different-columns(lg, $gutter, $columns)
+
+
+
+
+

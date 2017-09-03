@@ -1,0 +1,63 @@
+/*@font-face {
+  font-family: 'GeneralUI';
+  src:  url('../../fonts/GeneralUI/GeneralUI.eot?qjf5fm');
+  src:  url('../../fonts/GeneralUI/GeneralUI.eot?qjf5fm#iefix') format('embedded-opentype'),
+    url('../../fonts/GeneralUI/GeneralUI.ttf?qjf5fm') format('truetype'),
+    url('../../fonts/GeneralUI/GeneralUI.woff?qjf5fm') format('woff'),
+    url('../../fonts/GeneralUI/GeneralUI.svg?qjf5fm#GeneralUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+[class^="icon-"], [class*="icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'GeneralUI' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
+.icon-edit:before {
+  content: "\e900";
+}
+.icon-globe:before {
+  content: "\e901";
+}
+.icon-laptop:before {
+  content: "\e902";
+}
+.icon-paper:before {
+  content: "\e903";
+}
+.icon-paper-cup:before {
+  content: "\e904";
+}
+.icon-selection:before {
+  content: "\e905";
+}
+.icon-television:before {
+  content: "\e906";
+}
+.icon-wallet:before {
+  content: "\e907";
+}
+.icon-bag:before {
+  content: "\e908";
+}
+.icon-cropping:before {
+  content: "\e909";
+}
+.icon-diamond:before {
+  content: "\e90a";
+}
+.icon-dish:before {
+  content: "\e90b";
+}
+*/
