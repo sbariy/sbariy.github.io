@@ -41,18 +41,17 @@ body textarea:required:valid
 	color: #666
 
 html, body
-	height: 100%
+	min-height: 100%
 	font-size: 16px
 	margin: 0
 	padding: 0
+	overflow-x: hidden
 
 body
 	min-width: 320px
-	position: relative
 	line-height: 1.25
 	font-family: $default-font
 	font-weight: 300;
-	overflow-x: hidden
 	opacity: 1
 
 section
@@ -246,7 +245,7 @@ section
 	&__top
 		padding: 75px 0 55px
 	&__services
-		padding: 140px 0 125px
+		padding: 140px 0 0
 	&__features
 		padding: 130px 0 50px
 	&__packages
