@@ -1,0 +1,19 @@
+.instances-toggler {
+    cursor: pointer;
+}
+
+.popover {
+    max-width: 460px;
+}
+
+.popover-instances {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100px;
+    padding-right: 10px;
+}
+
+td.popover-table + td.popover-table {
+    padding-left: 5px;
+}
+

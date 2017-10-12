@@ -1,0 +1,764 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<style>
+		/* Newsletter */
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.outer {
+    margin: 0 auto;
+    max-width: 700px;
+    width:100%;
+}
+
+.middle {
+    background-image: url('http://storage2.static.itmages.ru/i/16/0208/h_1454945690_3245242_1be949b77e.jpg');
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.middle .outer {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.header,
+.middle,
+.footer {
+    margin:0 10px;
+    text-align: center;
+    background-color: #cae6ef;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: Arial, Tahoma, Verdana !important;
+}
+
+/* Basic Styles */
+
+a {
+    color: #0ad8f5 !important;
+    text-decoration: underline;
+}
+
+a span {
+    color: #0077cc;
+}
+
+a img {
+    border: 0;
+}
+
+div, p, td {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.h1 {
+    font-family: 'helvetica', arial;
+    font-size: 24px;
+    color: #333333;
+    text-align: left;
+    line-height: 30px;
+}
+
+p,
+.paragraph {
+    font-family: helvetica, arial;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+    line-height: 20px;
+}
+
+p {
+    Margin: 1em 0;
+}
+
+.quote {
+    font-style: italic;
+    color: #999999;
+}
+
+.top-banner {
+    padding: 0 0 0 0;
+}
+
+.top-banner img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    display: block;
+}
+
+.bottom-banner {
+    padding: 0 0 0 0;
+}
+
+.bottom-banner img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    display: block;
+}
+
+.big-banner {
+    padding: 0 0 0 0;
+}
+
+.big-banner .h4 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #484357;
+}
+
+.big-banner img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    display: block;
+}
+
+.first-company {
+    padding: 0 0 0 0;
+}
+
+.first-company img {
+    width: 100%;
+    height: auto;
+    max-width: 171px;
+    max-height: 79px;
+    display: block;
+    padding-right: 45px;
+}
+
+.arrow-company {
+    padding: 0 0 0 0;
+}
+
+.arrow-company img {
+    width: 74px;
+    height: 251px;
+    display: block;
+}
+
+.article-img {
+    padding: 0 0 0 0;
+}
+
+.article-img img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+}
+
+/* Buttons */
+
+.button {
+    width:auto !important;
+    margin: auto;
+}
+
+.button td {
+    padding:0;
+}
+
+.button-link {
+    font-family: Arial, Tahoma, Verdana;
+    font-size: 12px;
+    color:#ffffff !important;
+    text-decoration: none;
+    background-color: #ff3143;
+    border:#ff3143 10px solid;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.button-link span {
+    display: inline-block;
+    border-left:#ff3143 10px solid;
+    border-right:#ff3143 10px solid;
+    color:#ffffff;
+}
+
+/* Custom CSS */
+
+.b-offers .h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.b-offers .h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.b-offers span {
+    font-size: 12px;
+    color: white;
+}
+
+.contacts .h1 {
+    text-align: center;
+}
+
+.contacts .paragraph {
+    text-align: center;
+}
+
+.content {
+    padding:0 0 0 0;
+}
+
+.credits .paragraph {
+    color: #999999;
+    font-size: 12px;
+    text-align: center;
+}
+
+.header .h1 {
+    text-align: center;
+}
+
+.header .paragraph {
+    text-align: center;
+    font-size: 11px;
+    color:#666666;
+}
+
+.logo td {
+    text-align: center;
+}
+
+td.menu {
+    width: 320px;
+    padding-right: 10px;
+}
+
+td.menu a {
+    padding-right: 20px;
+    color: #484357 !important;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+td.menu .last {padding-right: 0px;}
+
+td.link-online {
+    font-size: 12px;
+    text-align: left;
+}
+
+td.link-online a { text-decoration: none; color: #484357 !important; font-family: Arial, Tahoma, Verdana;}
+
+/* Multicolumns */
+
+.one-column, .two-columns, .three-columns, .four-columns {
+    text-align: center;
+    font-size: 0;
+}
+.two-columns, .three-columns, .four-columns {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: left;
+}
+.one-column .column {
+    max-width: 700px;
+}
+.two-columns .column {
+    max-width: 350px;
+}
+.three-columns .column {
+    max-width: 226px;
+}
+.four-columns .column {
+    max-width: 340px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 400px) {
+    .two-columns .column {
+        max-width: 100% !important;
+    }
+    .three-columns .column {
+        max-width: 49.9% !important;
+    }
+    .four-columns .column {
+        max-width: 100% !important;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 620px) {
+    .two-columns .column {
+        max-width: 50% !important;
+    }
+    .three-columns .column {
+        max-width: 33.33% !important;
+    }
+    .four-columns .column {
+        max-width: 100% !important;
+    }
+}
+
+	</style>
+	<div class="adM"></div>
+	<span style="display:none!important;width:0;min-height:0;color:transparent">
+		Произвольный текст распологаюший сразу после названия темы или как по английски Preheader</span>
+	<div class="middle">
+		<!--[if (gte mso 9)|(IE)]>
+		<table width="700" align="center">
+		<tr>
+		<td>
+		<![endif]-->
+		<table class="outer" cellpadding="0" align="center">
+
+			<!-- Header -->
+			<tr>
+				<td class="one-column content">
+					<div class="column">
+						<table width="100%" cellpadding="15">
+							<tr>
+								<td style="padding-top:25px; padding-left: 20px; padding-right: 20px">
+									<table cellpadding="0" width="100%">
+										<tr>
+											<td style="padding-right: 15px; text-align: right;" width="139">
+												<img width="109" height="22" src="http://storage7.static.itmages.ru/i/16/0208/h_1454945583_8159164_e093a3f9bc.jpg" alt="" />
+											</td>
+											<td class="menu">
+												<span><a href="">Офферы</a></span>
+												<span><a href="">Отчёты</a></span>
+												<span class="last"><a href="">Финансы</a></span>
+											</td>
+											<td class="link-online">
+												<span><a href="">Просмотреть онлайн&nbsp;></a></span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<!-- Top Banner -->
+			<tr>
+				<td class="top-banner">
+					<img src="http://storage1.static.itmages.ru/i/16/0208/h_1454947102_1375420_a24237b08f.gif" width="700">
+				</td>
+			</tr>
+
+			<!-- Big Banner -->
+			<tr>
+				<td class="big-banner">
+					<img src="http://storage4.static.itmages.ru/i/16/0208/h_1454945862_4119283_a41ee4cf66.jpg" width="700">
+
+					<!-- Long Button -->
+					<div style="text-align:center;">
+						<table style="margin-top: 5px;" class="button">
+							<tr>
+								<td class="button-inner">
+									<a class="button-link" href="http://google.com/" target="_blank">
+										<span>Перейти к фотоотчёте конференции</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+
+					<!-- New Offers -->
+					<div style="text-align:center;">
+						<table style="margin-top: 55px;" class="button">
+							<tr>
+								<td class="h4">
+									<span>Новые офферы в системе</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+
+			<!-- Offers -->
+			<tr> <!-- First offer -->
+				<td bgcolor="#484357" class="two-columns b-offers" style="background-color: #484357; padding-left: 0px; padding-right: 0px; padding-top: 5px; padding-bottom: 5px;">
+					<!--[if (gte mso 9)|(IE)]>
+					<table width="100%">
+					<tr>
+					<td width="50%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table width="100%" cellpadding="0">
+							<tr>
+								<td>
+									<table width="100%" cellpadding="0" bgcolor="white" style="background-color: white;">
+										<tr>
+											<td align="right" class="first-company" style="padding-left: 20px;">
+												<img width="171" height="79" src="http://storage4.static.itmages.ru/i/16/0208/h_1454946112_7269444_132a6b1815.jpg" alt="" />
+											</td>
+											<td class="arrow-company" bgcolor="#484357" style="background-color: #484357">
+												<img width="74" height="251" src="http://storage2.static.itmages.ru/i/16/0208/h_1454945809_7646834_e56368c692.jpg" alt="" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td><td width="50%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table width="100%" cellpadding="0">
+							<tr>
+								<td style="padding-top: 25px">
+									<table width="100%" cellpadding="0">
+										<tr>
+											<td class="offer-description" style="padding-left: 20px; padding-right: 20px">
+												<div class="h2">OneClickMoney [micro] [sale]</div>
+												<div class="h3">Микрофинансы</div>
+												<span>Оплата: 700.00</span><br><br><span>Цель: Оплачивается выдача займа</span><br><br>
+												<!-- Offer Button -->
+												<div style="text-align:left; margin-bottom: 30px;">
+													<table style="margin: 0" class="button">
+														<tr>
+															<td class="button-inner">
+																<a class="button-link" href="http://google.com/" target="_blank">
+																	<span>Перейти к офферу&nbsp;></span>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+				</td>
+			</tr>
+			<tr> <!-- Second offer -->
+				<td bgcolor="#484357" class="two-columns b-offers" style="background-color: #484357; padding-left: 0px; padding-right: 0px; padding-bottom: 5px;">
+					<!--[if (gte mso 9)|(IE)]>
+					<table width="100%">
+					<tr>
+					<td width="50%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table width="100%" cellpadding="0">
+							<tr>
+								<td>
+									<table width="100%" cellpadding="0" bgcolor="white" style="background-color: white;">
+										<tr>
+											<td align="right" class="first-company" style="padding-left: 20px;">
+												<img width="171" height="79" src="http://storage4.static.itmages.ru/i/16/0208/h_1454946112_7269444_132a6b1815.jpg" alt="" />
+											</td>
+											<td class="arrow-company" bgcolor="#484357" style="background-color: #484357">
+												<img width="74" height="251" src="http://storage2.static.itmages.ru/i/16/0208/h_1454945809_7646834_e56368c692.jpg" alt="" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td><td width="50%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table width="100%" cellpadding="0">
+							<tr>
+								<td style="padding-top: 25px">
+									<table width="100%" cellpadding="0">
+										<tr>
+											<td class="offer-description" style="padding-left: 20px; padding-right: 20px">
+												<div class="h2">OneClickMoney [micro] [sale]</div>
+												<div class="h3">Микрофинансы</div>
+												<span>Оплата: 700.00</span><br><br><span>Цель: Оплачивается выдача займа</span><br><br>
+												<!-- Offer Button -->
+												<div style="text-align:left; margin-bottom: 30px;">
+													<table style="margin: 0" class="button">
+														<tr>
+															<td class="button-inner">
+																<a class="button-link" href="http://google.com/" target="_blank">
+																	<span>Перейти к офферу&nbsp;></span>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+				</td>
+			</tr>
+
+			<tr> <!-- Third offer -->
+				<td bgcolor="#484357" class="two-columns b-offers" style="background-color: #484357; padding-left: 0px; padding-right: 0px; padding-bottom: 5px;">
+					<!--[if (gte mso 9)|(IE)]>
+					<table width="100%">
+					<tr>
+					<td width="50%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table width="100%" cellpadding="0">
+							<tr>
+								<td>
+									<table width="100%" cellpadding="0" bgcolor="white" style="background-color: white;">
+										<tr>
+											<td align="right" class="first-company" style="padding-left: 20px;">
+												<img width="171" height="79" src="http://storage4.static.itmages.ru/i/16/0208/h_1454946112_7269444_132a6b1815.jpg" alt="" />
+											</td>
+											<td class="arrow-company" bgcolor="#484357" style="background-color: #484357">
+												<img width="74" height="251" src="http://storage2.static.itmages.ru/i/16/0208/h_1454945809_7646834_e56368c692.jpg" alt="" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td><td width="50%" valign="top">
+					<![endif]-->
+					<div class="column">
+						<table width="100%" cellpadding="0">
+							<tr>
+								<td style="padding-top: 25px">
+									<table width="100%" cellpadding="0">
+										<tr>
+											<td class="offer-description" style="padding-left: 20px; padding-right: 20px">
+												<div class="h2">OneClickMoney [micro] [sale]</div>
+												<div class="h3">Микрофинансы</div>
+												<span>Оплата: 700.00</span><br><br><span>Цель: Оплачивается выдача займа</span><br><br>
+												<!-- Offer Button -->
+												<div style="text-align:left; margin-bottom: 30px;">
+													<table style="margin: 0" class="button">
+														<tr>
+															<td class="button-inner">
+																<a class="button-link" href="http://google.com/" target="_blank">
+																	<span>Перейти к офферу&nbsp;></span>
+																</a>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+				</td>
+			</tr>
+
+			
+			<!-- Articles -->
+			<tr>
+				<td class="one-column content">
+					<div class="column">
+						<table width="100%" cellpadding="25">
+							<tr>
+								<td style="padding-bottom:10px; padding-left: 50px; padding-right: 50px;">
+									
+									<!-- First Article -->
+									<div width="100%" style="font-size: 14px; color: #484357; text-align: left; font-weight: bold;" class="h3">Текстовая часть</div>
+									<p style="font-size: 12px; line-height: 16px;">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития.
+Товарищи! консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Таким образом рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. </p><br>
+
+									<!-- Second Article -->
+									<div width="100%" style="font-size: 14px; color: #484357; text-align: center; font-weight: bold;" class="h3">Текстовая часть</div>
+									<table cellspacing="0" cellpadding="0" style="margin-top: 10px;"><tr><td class="article-img"><img width="600" src="http://storage7.static.itmages.ru/i/16/0208/h_1454945955_4812065_a0578a5b4e.jpg" alt="" /></td></tr></table>
+									<p style="font-size: 12px; line-height: 16px;">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития.
+Товарищи! консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Таким образом рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. </p><br>
+
+									<!-- Third Article -->
+									<div width="100%" style="font-size: 14px; color: #484357; text-align: center; font-weight: bold;" class="h3">Текстовая часть</div>
+									<table cellspacing="0" cellpadding="0" style="margin-top: 10px;"><tr><td class="article-img"><img width="600" src="http://storage7.static.itmages.ru/i/16/0208/h_1454945955_4812065_a0578a5b4e.jpg" alt="" /></td></tr></table>
+									<p style="font-size: 12px; line-height: 16px;">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития.
+Товарищи! консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом требуют от нас анализа существенных финансовых и административных условий. Таким образом рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. </p>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+
+
+			<!-- Bottom Banner -->
+			<tr>
+				<td class="top-banner">
+					<img src="http://storage1.static.itmages.ru/i/16/0208/h_1454947102_1375420_a24237b08f.gif" width="700">
+				</td>
+			</tr>
+
+			<!-- Footer -->
+			<tr>
+				<td bgcolor="#444140" style="background-image: url('http://storage9.static.itmages.ru/i/16/0208/h_1454945997_6228116_526509bff4.jpg'); padding: 80px 0px 20px 0px; background-color: #444140;" >
+					<table cellpadding="0" width="100%" cellspacing="0" align="center">
+						<tr>
+							<td class="two-columns" style="padding-bottom: 20px;">
+								<!--[if (gte mso 9)|(IE)]>
+								<table width="100%">
+								<tr>
+								<td width="50%" valign="top">
+								<![endif]-->
+								<div class="column" style="vertical-align: bottom; max-width: 340px">
+									<table width="100%" cellpadding="0" style="padding-left: 10px; pading-right: 10px">
+										<tr>
+											<td>
+												<table width="100%" cellpadding="10" style="border-radius:4px;">
+													<tr>
+														<td class="footer-logo">
+															<table cellpadding="0" cellspacing="0" align="center" width="185">
+																<tr>
+																	<td><div style="padding-bottom: 10px;"><img width="119" height="24" src="http://storage2.static.itmages.ru/i/16/0208/h_1454946054_6680892_ed96150e49.png" alt="" /></div></td>
+																</tr>
+																<tr>
+																	<td><span style="line-height: 1.8; color: white; font-size: 12px;">Лидер финансового сегмента<br>рынка CPA в России</span></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<!--[if (gte mso 9)|(IE)]>
+								</td><td width="50%" valign="top">
+								<![endif]-->
+								<div class="column" style="vertical-align: bottom; max-width: 340px;">
+									<table width="100%" cellpadding="0" style="padding-left: 10px; padding-right: 10px;">
+										<tr>
+											<td>
+												<table width="100%" cellpadding="10" style="border-radius:4px;">
+													<tr>
+														<td class="footer-logo">
+															<table cellpadding="0" cellspacing="0" align="center" width="185">
+																<tr>
+																	<td><span style="line-height: 1.8; color: white; font-size: 12px;">&copy; 2010-2015 ООО "Лидс".<br>Телефон: +7 (800) 500-0426<br>Эл.&nbsp;почта:&nbsp;<a style="color: #0ad8f5 !important"  href="mailto:support@leads.su">support@leads.su</a></span></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<!--[if (gte mso 9)|(IE)]>
+								</td>
+								</tr>
+								</table>
+								<![endif]-->
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<!-- Social Icons -->
+								<div align="center">
+									<table align="center" cellpadding="5" style="margin: auto auto 15px;">
+										<tr>
+											<td>
+												<a style="text-decoration: none;" href="http://google.com" target="_blank">
+													<img width="30" height="31" src="http://storage4.static.itmages.ru/i/16/0208/h_1454947168_6336194_29a5ce3d01.png">
+												</a>
+											</td>
+											<td>
+												<a style="text-decoration: none;" href="http://google.com" target="_blank">
+													<img width="30" height="31" src="http://storage6.static.itmages.ru/i/16/0208/h_1454947222_5595155_a5b820863b.png">
+												</a>
+											</td>
+											<td>
+												<a style="text-decoration: none;" href="http://google.com" target="_blank">
+													<img width="30" height="31" src="http://storage8.static.itmages.ru/i/16/0208/h_1454947261_2727848_6387fce06d.png">
+												</a>
+											</td>
+											<td>
+												<a style="text-decoration: none;" href="http://google.com" target="_blank">
+													<img width="30" height="31" src="http://storage7.static.itmages.ru/i/16/0208/h_1454947244_9917896_d7ea86ae25.png">
+												</a>
+											</td>
+											<td>
+												<a style="text-decoration: none;" href="http://google.com" target="_blank">
+													<img width="30" height="31" src="http://storage5.static.itmages.ru/i/16/0208/h_1454947188_9088814_7d94d81a56.png">
+												</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+								
+								<!-- Unsubscribe -->
+								<div align="center">
+									<table align="center" cellpadding="10" style="margin:auto;">
+										<tr>
+											<td style="text-align: center">
+												<span style="font-size: 12px; color: white">Хотите с нами попрощаться? <a style="color: #0ad8f5 !important; text-decoration: none;"  href="http://google.com" target="_blank"><br>Отпишитесь</a> сейчас</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!--[if (gte mso 9)|(IE)]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+	</div>
+</body>
+
+</html>
